@@ -52,7 +52,7 @@ for(let i=0;i<100000;i++) {
 
   From left to right: when for(let i=0; i<4000; i++), when for(let i=0; i<100000; i++), and when the mask is in grayscale.
 
-  ![readme](https://github.com/23-2-DSDN242/mddn-242-data-mapping-dribnet/assets/140350024/ca9563f5-3275-4128-b4c3-2e776e2d339d)
+![readme](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/54cbf957-ce3c-40eb-8a7f-86dd5635abbe)
 
 
 
