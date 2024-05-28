@@ -167,11 +167,12 @@ I attempted various iterations based on this codes.
 ![readme1](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/c4c536a4-1eca-4b72-8db9-4e853e4eed41)
 ![readme2](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/395dbbb7-34b2-4d06-906c-7586d5de8c9f)
 ![readme3](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/b2de0a11-d3c1-49b0-91cc-096e63534ac1)
+![rd](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/7f7ea43c-1809-483b-9df1-3c114267c4dc)
 
 
 # Final experiment
 
-After selecting the visual filter codes, I recalled another photography project from last year, which revolved around a woman trapped in the past due to her trauma. I believed these photos would convey the theme more effectively than dog pictures. The drawing-like colours and blurred background suggested an unrealistic, surreal time frame, while the figures drawn with the wave effect represented glitches,(errors on the screen), symbolizing individuals who shouldn't exist in this dimension.
+After selecting the visual filter codes, I recalled another photography project from last year, which revolved around a woman trapped in the past time dimension due to her trauma. I believed these photos would convey the theme more effectively than dog pictures. The drawing-like colours and blurred background suggested an unrealistic, surreal time frame, while the figures drawn with the wave effect represented glitches,(errors on the screen), symbolizing individuals who shouldn't exist in this dimension.
 
 However, while the blur effect added a drawing-like quality to the images, it also made them appear unclear. Therefore, I decided to remove the blur effect and solely use the adjusting pixel colour code.
 
@@ -196,3 +197,10 @@ After conducting four times of AI mask generation, I successfully got three fina
 Most parts of the images were successfully masked, although some areas were not perfectly masked, leaving behind visible edges
 
 <img width="447" alt="Screenshot 2024-05-28 at 7 13 40 PM" src="https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/896647a8-21b6-438b-ae94-8c79cf4f5989">
+
+<img width="447" alt="Screenshot 2024-05-28 at 7 16 15 PM" src="https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/bb97903c-05d6-423a-821b-67cf02f67eab">
+
+# Final outputs
+
+
+
