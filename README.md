@@ -50,9 +50,69 @@ for(let i=0;i<100000;i++) {
 
   ````
 
+
+
   From left to right: when for(let i=0; i<4000; i++), when for(let i=0; i<100000; i++), and when the mask is in grayscale.
 
+
 ![readme](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/54cbf957-ce3c-40eb-8a7f-86dd5635abbe)
+
+
+
+
+
+I was searching for an effect to give the image a drawing-like feel, as I originally planned. During my search, I came across a code on YouTube.
+
+[Youtube link] (https://www.youtube.com/watch?v=ktkkjlluI_4)
+
+This code on YouTube that described creating a custom image filter which blurs the image and then approximates each pixel to the nearest color.
+
+
+```
+
+  sourceImg.filter(BLUR, 4);
+  
+  for (let r = 0; r <= 255; r += 64) {
+    for (let g = 0; g <= 255; g += 64) {
+      for (let b = 0; b <= 255; b += 64) {
+        colors.push([r, g, b]);
+      }
+    }
+  }
+
+  sourceImg.loadPixels();
+  for (let x = 0; x < sourceImg.width; x++) {
+    for (let y = 0; y < sourceImg.height; y++) {
+      let index = (x + y * sourceImg.width) * 4;
+      let r = sourceImg.pixels[index + 0];
+      let g = sourceImg.pixels[index + 1];
+      let b = sourceImg.pixels[index + 2];
+
+      let closestColor = [Number.MAX_VALUE, []];
+      for (let color of colors) {
+        let diff = dist(r, g, b, color[0], color[1], color[2]);
+        if (diff < closestColor[0]) {
+          closestColor[0] = diff;
+          closestColor[1] = color;
+        }
+      }
+      sourceImg.pixels[index + 0] = closestColor[1][0];
+      sourceImg.pixels[index + 1] = closestColor[1][1];
+      sourceImg.pixels[index + 2] = closestColor[1][2];
+    }
+  }
+  sourceImg.updatePixels();
+
+```
+
+I also applied the wave effect code from the pixel examples introduced in [week 11] to the mask.
+
+(https://github.com/23-2-DSDN242/mddn-242-data-mapping-dribnet/blob/8102140af8a1de2b7ac0ee6fc219f80a70329b7f/sketch.js)
+
+
+![output_1 (11)](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/b48b595f-cd29-47b9-ae94-e4997e8f8bb3)
+
+
 
 
 
