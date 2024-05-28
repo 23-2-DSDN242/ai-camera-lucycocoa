@@ -113,7 +113,47 @@ I also applied the wave effect code from the pixel examples introduced in [week 
 ![output_1 (11)](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/b48b595f-cd29-47b9-ae94-e4997e8f8bb3)
 
 
+And by increasing the number of waves, I achieved a glitch-like effect.
+
+````
 
 
+function draw() {
+  angleMode(DEGREES);
+  let num_lines_to_draw = 40;
 
+  for (let j = renderCounter; j < renderCounter + num_lines_to_draw && j < Y_STOP; j++) {
+    for (let i = 0; i < X_STOP; i++) {
+      colorMode(RGB);
+      let mask = maskImg.get(i, j);
+      let pix;
+      
+      if (mask[1] < 128) {
+        pix = sourceImg.get(i, j);
+      } else {
+        let wave = sin(j * 30);     ///////// number of waves
 
+        let slip = map(wave, -1, 1, -OFFSET, OFFSET);
+        pix = sourceImg.get((i + slip + X_STOP) % X_STOP, j); // Handle wrap around
+      }
+
+      set(i, j, color(pix));
+    }
+  }
+
+  renderCounter += num_lines_to_draw;
+  updatePixels();
+}
+````
+![output_1 (12)](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/d607ef6f-f65b-4e06-9753-2bbd516bedb7)
+
+```
+let wave = sin(j * 60);
+```
+![output_1 (13)](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/a33ae38b-7c12-4f33-adf4-4f3ddf4896d1)
+
+I attempted various iterations based on this codes.
+
+![readme1](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/c4c536a4-1eca-4b72-8db9-4e853e4eed41)
+![readme2](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/395dbbb7-34b2-4d06-906c-7586d5de8c9f)
+![readme3](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/b2de0a11-d3c1-49b0-91cc-096e63534ac1)

@@ -214,28 +214,28 @@ function draw () {
 //   //   }
 //   // }
  
-  for(let i=0;i<100000;i++) {
+  // for(let i=0;i<100000;i++) {
   
     
-    let x = floor(random(sourceImg.width));
-    let y = floor(random(sourceImg.height));
-    let pix = sourceImg.get(x, y);
-    let mask = maskImg.get(x, y);
-    fill(pix);
-    if(mask[0] > 128) {
-      let pointSize = 10;
-      fill(sourceImg.get(x,y))
-      rect(x, y, pointSize, pointSize);
-    }
-    else {
-      // Convert to grayscale
-      let gray = (pix[0] + pix[1] + pix[2]) / 3;
-      let grayPix = [gray, gray, gray];
-      fill(grayPix);
-      let pointSize = 20;
-      rect(x, y, pointSize, pointSize);
-    }
-  }
+  //   let x = floor(random(sourceImg.width));
+  //   let y = floor(random(sourceImg.height));
+  //   let pix = sourceImg.get(x, y);
+  //   let mask = maskImg.get(x, y);
+  //   fill(pix);
+  //   if(mask[0] > 128) {
+  //     let pointSize = 10;
+  //     fill(sourceImg.get(x,y))
+  //     rect(x, y, pointSize, pointSize);
+  //   }
+  //   else {
+  //     // Convert to grayscale
+  //     let gray = (pix[0] + pix[1] + pix[2]) / 3;
+  //     let grayPix = [gray, gray, gray];
+  //     fill(grayPix);
+  //     let pointSize = 20;
+  //     rect(x, y, pointSize, pointSize);
+  //   }
+  // }
   
 
 //   // renderCounter = renderCounter + num_lines_to_draw;
@@ -262,31 +262,31 @@ function draw () {
 
 // //make mask image into grayscale
 
-// angleMode(DEGREES);
-// let num_lines_to_draw = 40;
-// // Get one scanline
-// for (let j = renderCounter; j < renderCounter + num_lines_to_draw && j < Y_STOP; j++) {
-//   for (let i = 0; i < X_STOP; i++) {
-//     colorMode(RGB);
-//     let mask = maskImg.get(i, j);
-//     let pix = sourceImg.get(i, j);
+angleMode(DEGREES);
+let num_lines_to_draw = 40;
+// Get one scanline
+for (let j = renderCounter; j < renderCounter + num_lines_to_draw && j < Y_STOP; j++) {
+  for (let i = 0; i < X_STOP; i++) {
+    colorMode(RGB);
+    let mask = maskImg.get(i, j);
+    let pix = sourceImg.get(i, j);
 
-//     if (mask[1] < 128) {
-//       // Convert to grayscale
-//       let wave = sin(j * 5);
-//       let slip = map(wave, -1, 1, -OFFSET, OFFSET);
-//       pix = sourceImg.get(i + slip, j);
+    if (mask[1] < 128) {
+      // Convert to grayscale
+      let wave = sin(j * 50);
+      let slip = map(wave, -1, 1, -OFFSET, OFFSET);
+      pix = sourceImg.get(i + slip, j);
       
-//     } else {
-//       let gray = (pix[0] + pix[1] + pix[2]) /3 ;
-//       pix = [gray, gray, gray];
-//     }
+    } else {
+      let gray = (pix[0] + pix[1] + pix[2]) /3 ;
+      pix = [gray, gray, gray];
+    }
 
-//     set(i, j, color(pix));
-//   }
-// }
-// renderCounter += num_lines_to_draw;
-// updatePixels();
+    set(i, j, color(pix));
+  }
+}
+renderCounter += num_lines_to_draw;
+updatePixels();
 
 if (renderCounter > Y_STOP) {
   console.log("Done!");
