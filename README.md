@@ -2,6 +2,16 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15040891&assignment_repo_type=AssignmentRepo)
 ## Creative Coding 2: Custom Pixel
 
+# Initial idea
+
+For this project, I aim to create a fairytale atmosphere using rabbit hole photos. Specifically, I want to enhance the sense of mystery by applying a glass material effect directly to the holes.
+
+<img width="405" alt="22" src="https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/656d6073-4dba-47b3-9e69-4deeb1ef1c65">
+<img width="405" alt="222" src="https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/664dc8c4-ec11-4d17-ab45-0a020c3e643d">
+
+
+
+
 
 # First experiment
 
@@ -157,3 +167,32 @@ I attempted various iterations based on this codes.
 ![readme1](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/c4c536a4-1eca-4b72-8db9-4e853e4eed41)
 ![readme2](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/395dbbb7-34b2-4d06-906c-7586d5de8c9f)
 ![readme3](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/b2de0a11-d3c1-49b0-91cc-096e63534ac1)
+
+
+# Final experiment
+
+After selecting the visual filter codes, I recalled another photography project from last year, which revolved around a woman trapped in the past due to her trauma. I believed these photos would convey the theme more effectively than dog pictures. The drawing-like colours and blurred background suggested an unrealistic, surreal time frame, while the figures drawn with the wave effect represented glitches,(errors on the screen), symbolizing individuals who shouldn't exist in this dimension.
+
+However, while the blur effect added a drawing-like quality to the images, it also made them appear unclear. Therefore, I decided to remove the blur effect and solely use the adjusting pixel colour code.
+
+
+From left to right: no Blur, (Blur,4), (Blur, 8)
+
+
+![readme,](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/a9d7dd98-f952-4713-90b7-b6b32907ad7c)
+
+
+# AI masking
+
+After conducting four times of AI mask generation, I successfully got three final AI mask images.
+
+![ai](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/4e2474db-51f6-499f-a741-ed08cc1cf22f)
+
+![output_1 (18)](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/f86b96f3-dffd-4e35-8855-bcb0f3c8824a)
+![output_1 (19)](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/80900b4b-de02-488b-8987-86dd33a9dcb0)
+![output_1 (20)](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/5216216a-e171-4a63-a880-9acc5223bbb1)
+
+
+Most parts of the images were successfully masked, although some areas were not perfectly masked, leaving behind visible edges
+
+<img width="447" alt="Screenshot 2024-05-28 at 7 13 40 PM" src="https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/896647a8-21b6-438b-ae94-8c79cf4f5989">
