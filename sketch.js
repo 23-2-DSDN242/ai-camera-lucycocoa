@@ -1,10 +1,9 @@
-// 
+
 let sourceImg = null;
 let maskImg = null;
 
-// Change these three lines as appropriate
-let sourceFile = "input_new3.jpg";
-let maskFile = "mask_new3.png";
+let sourceFile = "input_1.jpg";
+let maskFile = "mask_1.png";
 let outputFile = "output_1.png";
 
 let colors = [];
@@ -20,15 +19,16 @@ function setup() {
 
   imageMode(CENTER);
   noStroke();
+  background(255,255,255)
   
   
   maskImg.loadPixels();
   colorMode(RGB);
 
-  // Adjust the blur strength
-  // sourceImg.filter(BLUR, 4);
+ 
+  
   maskImg.updatePixels();
-
+                                               //// Adjust pixel colors
   for (let r = 0; r <= 255; r += 64) {
     for (let g = 0; g <= 255; g += 64) {
       for (let b = 0; b <= 255; b += 64) {
@@ -75,7 +75,9 @@ let OFFSET = 20; // Change this to 200 for more noticeable effect
 
 let renderCounter = 0;
 
+
 function draw() {
+                                    //Warping filter
   angleMode(DEGREES);
   let num_lines_to_draw = 40;
 
@@ -103,7 +105,7 @@ function draw() {
   if (renderCounter > Y_STOP) {
     console.log("Done!");
     noLoop();
-    saveCanvas(outputFile);
+  //  saveCanvas(outputFile);
   }
 }
 
