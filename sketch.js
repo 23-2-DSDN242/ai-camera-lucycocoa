@@ -24,10 +24,10 @@ function setup() {
   
   maskImg.loadPixels();
   colorMode(RGB);
-
+  maskImg.updatePixels();
  
   
-  maskImg.updatePixels();
+
                                                //// Adjust pixel colors
   for (let r = 0; r <= 255; r += 64) {
     for (let g = 0; g <= 255; g += 64) {
