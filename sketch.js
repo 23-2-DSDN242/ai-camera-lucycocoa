@@ -71,13 +71,13 @@ function setup() {
 
 let X_STOP = 1920;
 let Y_STOP = 1080;
-let OFFSET = 20; // Change this to 200 for more noticeable effect
+let OFFSET = 20; 
 
 let renderCounter = 0;
 
 
 function draw() {
-                                    //Warping filter
+                                    ////Warping filter
   angleMode(DEGREES);
   let num_lines_to_draw = 40;
 
@@ -90,7 +90,7 @@ function draw() {
       if (mask[1] < 128) {
         pix = sourceImg.get(i, j);
       } else {
-        let wave = sin(j * 40);     /// wave thickness
+        let wave = sin(j * 40);     //// wave thickness
         let slip = map(wave, -1, 1, -OFFSET, OFFSET);
         pix = sourceImg.get((i + slip + X_STOP) % X_STOP, j); 
       }
