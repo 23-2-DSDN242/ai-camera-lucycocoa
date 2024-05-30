@@ -203,7 +203,14 @@ Most parts of the images were successfully masked, although some areas were not 
 
 # Final outputs
 
+Although I was not able to use the rabbit hole photos as initially planned in the experiment, I successfully achieved my intended theme. By adjusting the pixel colors, I created a drawing-like color theme, and the Warping filter effectively illustrated the figure as an error that must be removed or presented as a glass-morphism concept.
 
+![output_1](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/6dab3104-5906-4908-a78f-89904cf4ca2e)
+![output_2](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/82dcabd7-5a00-4096-83c2-b2f47eca307d)
+![output_3](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/6b8d6e24-3429-40e2-afd6-5b95054775c6)
+![output_4](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/b4885fe9-40e8-40d4-9e3f-8b7498e9dec3)
+![output_5](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/a29f8dcc-4956-443e-9e04-97a64390273c)
+![output_6](https://github.com/23-2-DSDN242/ai-camera-lucycocoa/assets/140350024/c16baa8f-c3ef-42d0-82da-f3c155225f04)
 
 
 
